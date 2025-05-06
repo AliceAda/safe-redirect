@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>安全跳转</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: sans-serif; text-align: center; padding-top: 50px; }
+  </style>
+  <script>
+    // 原始链接（可以来自扫码或后台配置）
+    const targetUrl = "http://hsld4n78cbe56zt.czbcfgxz.ddkku.hoyni.com/qu.php?id=2120";
+
+    // 判断是否为敏感站点
+    if (targetUrl.includes("cd1a.cn")) {
+      // 如果是敏感网址，跳转到正能量网站
+      window.location.href = "https://www.baidu.cn";
+    } else {
+      // 否则正常跳转
+      window.location.href = targetUrl;
+    }
+  </script>
+</head>
+<body>
+  <h2>正在跳转，请稍候...</h2>
+</body>
+</html>
